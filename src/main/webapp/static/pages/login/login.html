@@ -1,0 +1,47 @@
+<br />
+<div class="row-fluid">
+	<div class="span10 offset1 mainView">
+	
+		<form name="loginForm" class="form-horizontal">
+		
+			<div>
+				<legend>Login</legend>
+			</div>
+			
+			<div ng-show="invalidLogin">
+				<div class="alert alert-error">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<strong>Invalid login</strong>
+					<br />
+					Username is incorrect.
+				</div>
+				<br />
+			</div>
+			
+			<div ng-show="expired">
+				<div class="alert alert-warning">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<strong>Session expired</strong>
+					<br />
+					No session has been found, please log in.
+				</div>
+				<br />
+			</div>
+		
+			<div class="control-group" ng-class="{error: loginForm.inputLogin.$invalid}">
+				<label class="control-label" for="inputLogin">Log in</label>
+				<div class="controls">
+					<input type="text" name="inputLogin" ng-model="login.login" ng-required="true" class="input-custom" placeholder="Login" />
+					<span ng-show="loginForm.inputLogin.$error.required" class="help-inline">Field required.</span>
+				</div>
+			</div>
+			
+			<div class="row-fluid">
+				<div class="span4 offset2">
+					<button type="submit" ng-disabled="loginForm.$invalid" ng-click="login()" class="btn btn-primary">Log in</button>
+				</div>
+			</div>
+		
+		</form>
+	</div>
+</div>

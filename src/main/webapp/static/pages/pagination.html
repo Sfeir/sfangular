@@ -1,0 +1,16 @@
+<div class="pagination pagination-centered">
+	<ul>
+		<li ng-class="pagination.previousPage.getClass()" ng-switch on="pagination.previousPage.active">
+			<span ng-switch-when="false">&laquo;</span>
+			<a ng-href="#{{pagination.previousPage.url}}" ng-switch-when="true">&laquo;</a>
+		</li>
+		<li ng-repeat="page in pagination.pages" ng-class="page.getClass()" ng-switch on="page.current">
+			<span ng-switch-when="true">{{page.number}}</span>
+			<a ng-href="#{{page.url}}" ng-switch-when="false">{{page.number}}</a>
+		</li>
+		<li ng-class="pagination.nextPage.getClass()" ng-switch on="pagination.nextPage.active">
+			<span ng-switch-when="false">&raquo;</span>
+			<a ng-href="#{{pagination.nextPage.url}}" ng-switch-when="true">&raquo;</a>
+		</li>
+	</ul>
+</div>

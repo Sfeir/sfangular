@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <!--[if lte IE 9]>
+        <script src="/static/frameworks/json3/json3.min.js"></script>
+        <![endif]-->
+
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="static/frameworks/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="static/frameworks/bootstrap-datepicker/css/datepicker.css" />
+		<link rel="stylesheet" type="text/css" href="static/frameworks/bootstrap-timepicker/css/bootstrap-timepicker.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/general.css" />
+		
+		<title>Sfangular</title>
+	</head>
+	<body id="ng-app" ng-app="mainApp" ng-controller="mainController">
+		
+		<div ng-include src="'static/pages/popups.html'"></div>	
+		<div class="ng-view"></div>
+
+		<script type="text/javascript" src="static/frameworks/jquery/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="static/frameworks/bootstrap/js/bootstrap.js"></script>
+		
+		<script type="text/javascript" src="static/frameworks/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="static/frameworks/bootstrap-datepicker/js/locales/bootstrap-datepicker.fr.js"></script>
+		
+		<script type="text/javascript" src="static/frameworks/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+
+		<script type="text/javascript" src="static/frameworks/angular/angular.js"></script>
+		<script type="text/javascript" src="static/frameworks/angular/angular-resource.js"></script>
+
+		<script type="text/javascript" src="static/frameworks/angular-strap/angular-strap.js"></script>
+
+		<script type="text/javascript" src="static/js/auth.js"></script>
+		<script type="text/javascript" src="static/js/pagination.js"></script>
+		<script type="text/javascript" src="static/js/rest.js"></script>
+		<script type="text/javascript" src="static/js/url.js"></script>
+		<script type="text/javascript" src="static/js/exception.js"></script>
+		
+		<script type="text/javascript" src="static/js/mainController.js"></script>
+		<script type="text/javascript" src="static/js/headerController.js"></script>
+		
+		<script type="text/javascript" src="static/js/home/homeController.js"></script>
+
+		<script type="text/javascript" src="static/js/rights/rest.js"></script>
+
+		<script type="text/javascript" src="static/js/login/rest.js"></script>
+		<script type="text/javascript" src="static/js/login/loginController.js"></script>
+
+		<script type="text/javascript" src="static/js/users/rest.js"></script>
+		<script type="text/javascript" src="static/js/users/listController.js"></script>
+		<script type="text/javascript" src="static/js/users/addEditController.js"></script>
+
+	</body>
+</html>

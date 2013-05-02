@@ -1,0 +1,103 @@
+input.ng-invalid {
+	border: 3px solid #b94a48;
+}
+
+div.logOutButton {
+	float: right;
+}
+
+form.searchBar input {
+	width: 85%;
+}
+
+a.searchBar {
+	float: right;
+}
+
+table.list thead {
+	font-weight: bold;
+	background-color: #fbdf90;
+}
+
+table.list td {
+	text-align: center;
+}
+
+.btn-toolbar-custom {
+	margin: 0;
+}
+
+table.doubleSelect {
+	margin-top: 4px;
+}
+
+.doubleSelect thead {
+	font-weight: bold;
+}
+
+.icon-in-the-field {
+	position: relative;
+	margin: 2.5px 0 0 -24px;
+}
+
+input.input-custom {
+	height: auto !important;
+}
+
+input[type=number].noSpinner::-webkit-inner-spin-button,
+input[type=number].noSpinner::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.table-striped tbody > tr:nth-child(even) > td,
+.table-striped tbody > tr:nth-child(even) > th {
+  background-color: white;
+}
+
+div .mainView {
+	padding: 2%;
+	background-color: #fafafa; 
+	border: 1px solid #d4d4d4;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+div .genericPopup {
+	z-index: 1000;
+	position: absolute;
+	background-color: #fafafa;
+	background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+	background-repeat: repeat-x;
+	border: 1px solid #d4d4d4;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+	*zoom: 1;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+div .loadingBar {
+	width: 80%;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+}
+
+div .loadingPopup {
+	height: 30%;
+	top: 30%;
+}
+
+div .errorPopup {
+	top: 20%;
+	padding: 2%;
+}

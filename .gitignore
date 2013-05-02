@@ -1,0 +1,28 @@
+# General
+*.class
+classes/
+/build
+
+# Package
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.settings
+.classpath
+.project
+.metadata
+.externalToolBuilders
+
+# IntelliJ Idea
+.idea
+*.eml
+*.iml
+
+# Maven
+target
+
+# Images
+*.db
+

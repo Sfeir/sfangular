@@ -1,0 +1,11 @@
+How to add a time field :
+
+<div class="control-group" ng-class="{error: addEditForm.inputDSortieTime.$invalid}">
+	<label class="control-label" for="inputDSortieTime">Heure de sortie</label>
+	<div class="controls">
+		<input type="text" name="inputDSortieTime" ng-model="personne.dSortieTime" bs-timepicker ng-required="personne.dSortieDate" class="input-custom" placeholder="Heure de sortie" />
+		<i class="icon-time icon-in-the-field"></i>
+		<span ng-show="addEditForm.inputDSortieTime.$error.required" class="help-inline">Le champ est obligatoire</span>
+		<span ng-show="addEditForm.inputDSortieTime.$error.time" class="help-inline">Le format du champ est : hh:mm</span>
+	</div>
+</div>

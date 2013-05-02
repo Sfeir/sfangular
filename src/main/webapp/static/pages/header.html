@@ -1,0 +1,17 @@
+<br />
+<div class="row-fluid" align="center" ng-controller="headerController">
+	<div class="span10 offset1">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<a class="brand" href="#">Sfangular</a>
+				{{errorData}}
+				<ul class="nav">
+					<li ng-class="getClassOnglet('HOME')"><a ng-href="#">Accueil</a></li>
+					<li ng-class="getClassOnglet('USERS')"><a ng-href="#{{UrlUtils.getUrl('URL_USERS_LIST')}}">Users</a></li>
+					<li></li>
+				</ul>
+				<div class="btn btn-danger logOutButton" ng-click="logOut()">Log out</div>
+			</div>
+		</div>
+	</div>
+</div>

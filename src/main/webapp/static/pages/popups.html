@@ -1,0 +1,16 @@
+<div class="row-fluid">
+	<div class="span6 offset3 genericPopup loadingPopup" ng-show="loading">
+		<div class="loadingBar">
+		    <div class="progress progress-striped progress-warning active">
+		        <div class="bar" style="width: 100%;"></div>
+		    </div>
+	    </div>
+    </div>
+	<div class="span6 offset3 genericPopup errorPopup" ng-show="errorDisplay">
+		<h4>Error occurred :</h4>
+		{{errorTitle}}<br />
+		{{errorText}}
+		<br />
+		<br />
+    </div>
+</div>
