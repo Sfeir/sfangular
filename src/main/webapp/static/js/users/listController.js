@@ -91,11 +91,11 @@ function UsersListController($scope, $location, $routeParams, $rootScope, usersR
 		var list = returnObject.list;
 		for (var index in list) {
 			var user = list[index];
-			if (resultArray.indexOf(user.nom) == -1) {
-				resultArray.push(user.nom);
+			if (resultArray.indexOf(user.lastname) == -1) {
+				resultArray.push(user.lastname);
 			}
-			if (resultArray.indexOf(user.prenom) == -1) {
-				resultArray.push(user.prenom);
+			if (resultArray.indexOf(user.firstname) == -1) {
+				resultArray.push(user.firstname);
 			}
 		}
 		callback(resultArray);
